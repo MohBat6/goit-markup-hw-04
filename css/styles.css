@@ -114,17 +114,23 @@ margin-right: 50px;
     align-items: center;
     text-decoration: none;
 }
+.envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+.smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
 .contact-list a:hover,
 .contact-list a:focus {
     color: var(--accent-color);
     fill: var(--accent-color);
 }
-.envelope {
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;
-}
-
  .hero {
      max-width: 1600px;
      height: 600px;
@@ -300,6 +306,24 @@ color: var(--main-text-color);
 }
 .social li:not(:last-child) {
     margin-right: 10px;
+}
+.client-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.client-thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+    background-color: lightcoral;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 footer {
     margin-left: auto;
