@@ -114,16 +114,11 @@ margin-right: 50px;
     align-items: center;
     text-decoration: none;
 }
-.envelope {
+.contact-icon {
     width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    fill: currentColor;
-}
-.smartphone {
-    width: 10px;
     height: 16px;
     margin-right: 10px;
+    background-position: center;
     fill: currentColor;
 }
 .contact-list a:hover,
@@ -307,6 +302,9 @@ color: var(--main-text-color);
 .social li:not(:last-child) {
     margin-right: 10px;
 }
+.social-footer a {
+    background-color: rgba(255, 255, 255, 0.1);
+}
 .client-list {
     display: flex;
     justify-content: center;
@@ -320,10 +318,18 @@ color: var(--main-text-color);
     justify-content: center;
     width: 170px;
     height: 90px;
-    background-color: lightcoral;
+    fill: var(--main-text-color);
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
+}
+.client-thumb:hover,
+.client-thumb:focus {
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
+}
+.client-list li + li {
+    margin-left: 30px;
 }
 footer {
     margin-left: auto;
@@ -333,8 +339,30 @@ footer {
     font-style: normal;
     background-color: #2F303A;
 }
-footer li:not(:last-child) {
+.adres li:not(:last-child) {
     margin-bottom: 9px;
+}
+.footer-content {
+    display: flex;
+}
+.social-footer {
+    display: flex;
+    margin-top: 20px;
+    justify-content:left;
+    align-items: center;
+}
+.footer-content .footer-block + .footer-block {
+    margin-left: 70px;
+}
+.social-title-footer {
+    display: inline-block;
+     margin-top: 12px;
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 1.14;
+     color: var(--hero-text-color);
+     Letter-spacing: 0.03em;
+     text-transform: uppercase;
 }
 .logo-footer {
     display: inline-block;
