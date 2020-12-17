@@ -293,9 +293,10 @@ color: var(--main-text-color);
     justify-content: center;
     align-items: center;
     background-color: var(--hero-text-color);
-    fill: #AFB1B8;
+    fill:#AFB1B8;
 }
-.social-item:hover {
+.social-item:hover,
+.social-item:focus {
     background-color: var(--accent-color);
     fill: var(--hero-text-color);
 }
@@ -318,7 +319,7 @@ color: var(--main-text-color);
     justify-content: center;
     width: 170px;
     height: 90px;
-    fill: var(--main-text-color);
+    fill: #AFB1B8;
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
